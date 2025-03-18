@@ -1,0 +1,738 @@
+
+html {
+    font-family: "Rethink Sans", serif; 
+    font-size: 12pt; 
+}
+
+body {
+    background-color: #F8EB22;
+   
+    font-family: "Rethink Sans", serif;  
+}
+
+/* Styles für Navbar*/
+
+/*
+nav {
+    height: 80px;
+    
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+.links-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: white; 
+}
+
+nav a {
+    height: 100%;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all ease-in-out 100ms;
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: white;
+    color: black;
+}
+
+nav .Logo-link {
+    margin-right: auto;
+}
+
+nav svg {
+    fill: black;
+}
+
+#sidebar-active {
+    display: none;
+}
+
+.open-sidebar-button, .close-sidebar-button{
+    padding: 0 20px;
+    display: none;
+}
+
+@media (max-width: 1292px) {
+    .links-container   {
+        flex-direction: column;
+        align-items: flex-start;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 10;
+        clamp(fit-content, 300px, 100%)
+    }
+}
+    */
+
+/* Styles für Header */
+
+
+.container-header-image {
+    width: cover;    
+    padding-left: 20px;
+    padding-right: 20px;
+     
+ }
+ 
+ #image-header {
+    width: 100%;
+ }
+    
+ 
+ 
+ /* Styles für Hero Section */
+ 
+ .align-items-center {
+     margin-bottom: 30px;
+ }
+ 
+ .py-5 {
+     padding-top: 5px;
+     margin-top: 5px;
+     
+     }
+ 
+ .lead {
+     font-family: "Rethink Sans", serif;
+     color: black;    
+ }
+ 
+ .display-5 .fw-bold .text-body-emphasis .lh-1 .mb-3 {
+     font-family: "Rethink Sans", serif;
+     font-weight: 100;
+     font-style: normal;
+     color: black;     
+ }
+ 
+ .tk1 {
+     padding-bottom: 30px;
+ }
+ 
+ .container-hero {
+     margin-top: 60px;
+     margin-bottom: 40px;
+     margin-left: 40px;
+ }
+ 
+ .header-grid {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+     grid-template-rows: 200px auto;
+     gap: 20px;
+     width: 100%;
+     }
+ 
+ .grid-item {
+     grid-row-start: 1; 
+     grid-row-end: 1; 
+     grid-column-start: 1;
+     grid-column-end: 1;
+ 
+ }
+ 
+ .grid-image {
+     grid-row-start: 1; 
+     grid-row-end: 4; 
+     grid-column-start: 2;
+     grid-column-end: 2;
+     
+ 
+ }
+ 
+ .grid-item-2 {
+     grid-row-start: 3; 
+     grid-row-end: 4; 
+     grid-column-start: 1;
+     grid-column-end: 1;
+ 
+ }
+ 
+ .hero-h1 {
+     font-family: "Rethink Sans", serif;
+     font-size: 2rem;
+     font-style: bold; 
+     color: #F8EB22; 
+     background-color: black;
+     margin-bottom: 5px;
+     padding-left: 1rem;
+     padding-right: 1rem;
+     margin-bottom: 20px;
+     margin-right: 8rem;
+     margin-left: 15px;
+   
+ }
+ 
+ .hero-h2 {
+     font-family: "Rethink Sans", serif;
+     font-size: 2.5rem;
+     font-style: bold; 
+     color: black; 
+     padding-left: 1rem;
+     padding-right: 1rem;
+     margin-bottom: 20px;
+ }
+ 
+ .hero-p {
+     font-family:"Rethink Sans", serif;
+     font-size: 1.5rem;
+     color: black; 
+     padding-left: 1rem;
+     padding-right: 1rem;
+ }
+ 
+ 
+ /* Styles für Logo Section */
+ 
+
+ 
+.container-Logos {
+    display: flex;
+    justify-content: center;
+    width: 100%;  
+}
+
+.container img {
+width: 100%;
+}
+ .container-Logos {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+ }
+ .LogoSection-top {
+     background-color: #F8EB22; 
+ }
+ 
+ .LogoSection {
+     padding: 0px 0px 0px 0px;  
+     background-color: #F8EB22; 
+ }
+ 
+ .logo-top {
+     font-family: "Rethink Sans", serif;
+     font-size: 1.5rem;
+     color: black; 
+ }
+ 
+ /* Styles für Schirmherr-Section */
+ 
+ .container-Schirmherr {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+     grid-template-rows: 1fr 2fr;
+     width: 100%;
+     margin-top: 80px;
+ }
+ 
+ .Schirmherr-h2 {
+     background: white;
+     font-family: "Rethink Sans", serif;
+     color: black;
+     font-size: 1.3rem;
+     height: 100%;
+     padding-left: 2rem;
+     padding-right: 2rem;
+     padding-top: 1rem;
+     grid-row-start: 1;
+     grid-row-end: 1;
+     grid-column-start: 2;
+     grid-column-end: 4;
+ }
+ 
+ .Schirmherr-Text {
+     background: white;
+     font-family: "Rethink Sans", serif;
+     color: black;
+     font-size: 1.2rem;
+     height: 100%;
+     padding-left: 2rem;
+     padding-right: 2rem;
+     padding-top: 1rem;
+     grid-row-start: 2;
+     grid-row-end: 2;
+     grid-column-start: 2;
+     grid-column-end: 4;
+     margin-bottom: 0px;
+ }
+ 
+ .grid-image-schirmherr {
+     grid-column-start: 1; 
+     grid-column-end: 1;
+     
+     grid-row-start: 1;
+     grid-row-end: 3;
+     grid-column-start: 1;
+     grid-column-end: 2;
+     
+     height: 100%;
+     object-fit: cover;
+ }
+ 
+ 
+ 
+ /* Styles für Programm und Zeitplan */
+ 
+ .section-padding {
+     background: #F8EB22;
+     padding-top: 100px;
+     padding-bottom: 0px;
+ }
+ 
+ /* Styles für das Programm */
+ 
+ .container-programm {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+     grid-template-rows: 1fr 1fr;
+     width: 100%;
+     margin-inline: auto;
+     
+ }
+ 
+ .stacked {
+     display: grid;
+ }
+ 
+ .stacked > * {
+     grid-column: 1 / 2;
+     grid-row: 1 / 2;
+ }
+ 
+ .item-programm {
+     border: solid 0.5px black;
+ }
+ 
+ .item-2-programm {
+     border: solid 0.5px black;
+ }
+ 
+ .item-overlay {
+     font-family: "Rethink Sans", serif;
+     font-size: 2.5rem;
+     font-weight: 600; 
+     color: black;
+     background: white;
+     align-self: end;
+     z-index: 10;
+     margin-bottom: 50px;
+     margin-left: 2rem;
+     margin-right: 2rem;
+     text-align: center;
+     padding-top: 0.4rem;
+     padding-bottom: 0.4rem;
+     box-shadow: 0 .25 1rem rgb(0 0 0 / .1);
+ }
+ 
+ .item-overlay-link {
+     font-family: "Rethink Sans", serif;
+     font-size: 2.5rem;
+     font-weight: 600; 
+     color: black;  
+ }
+ 
+ .item-overlay-link:hover {
+     font-family: "Rethink Sans", serif;
+     font-size: 2.5rem;
+     font-weight: 600; 
+     color: #F8EB22;
+ }
+ .mb-4 {
+     font-family: "Rethink Sans", serif;
+     font-size: 2.5rem;
+     font-weight: 700; 
+     color: black; 
+     padding-bottom: 20px;
+ }
+ 
+ .text-body-secondary {
+     font-family: "Rethink Sans", serif; 
+     color: black;
+     font-size: 20px;
+ }
+ 
+ .programm-header {
+     color: white;
+ }
+ 
+ .row .justify-content-center .over-programm {
+     position: absolute;
+     margin: 0 0 0 0;
+     padding-top: 50px ;
+     width: 100%;
+     height: 100%;   
+ }
+ 
+ .artists-thumb {
+     position: relative;
+     font-family: "Rethink Sans", serif;
+     font-size: 40px;
+     font-weight: 500;
+ }
+ 
+ /* Styles für den Zeitplan */
+ 
+ .zeitplan {
+     display: flex;  
+     flex-wrap: wrap;
+     width: 100%;
+     background-image: url("https://torstenkliesch.github.io/gef/images/Vegan-Festival");
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     min-height: 80vh;  
+     padding-bottom: 100px; 
+     padding-top: 100px; 
+ }
+ 
+ .mb-zeitplan {
+     font-family: "Rethink Sans", serif;
+     font-size: 2.5rem;
+     font-weight: 700; 
+     color: black; 
+     padding-bottom: 40px;
+     text-align: center;
+ 
+ }
+ 
+ .mb-z {
+     font-family: "Rethink Sans", serif;
+     font-size: 4rem;
+     font-weight: 700; 
+     color: white; 
+     padding-bottom: 50px;
+ }
+ 
+ .schedule-table .pop-background-image {
+     background-image: url("https://torstenkliesch.github.io/gef/images/Vegan-Festival");
+     opacity: 80%;
+ }
+ 
+ .schedule-table .pop-background-image1 {
+     background-image: url("https://torstenkliesch.github.io/gef/images/walle1");
+     opacity: 80%;
+ }
+ 
+ .schedule-table .pop-background-image2 {
+     background-image: url("https://torstenkliesch.github.io/gef/images/Balkonmodul_bauen");
+     opacity: 80%;
+     height: 250px;
+ }
+ 
+ .schedule-table .pop-background-image3 {
+     background-image: url("gef/images/yoga.jpeg");
+     opacity: 80%;
+     height: 250px;
+ }
+ 
+ .schedule-table .pop-background-image4 {
+     background-image: url("../images/Fahrraddisko1.jpg");
+     opacity: 80%;
+     height: 250px;
+ }
+ 
+ .schedule-table .pop-background-image7 {
+     background-image: url('../images/concert-1854113_1280.jpg');
+     opacity: 80%;
+     height: 250px;
+ }
+ 
+ .schedule-table .pop-background-image6 {
+     background-image: url('https://torstenkliesch.github.io/gef/images/Vortrag');
+     opacity: 80%;
+     height: 250px;
+ }
+ 
+ .schedule-table thead th {
+     background-color: #212529;
+     border-right: 1px solid #363a3e;
+     color: white;
+     font-family: "Rethink Sans", serif;
+     font-size: 20px;
+ }
+ 
+ .schedule-table th, .schedule-table tr, .schedule-table td {
+     font-family: "Rethink Sans", serif;
+     font-size: 20px;
+ }
+ 
+ .zeitplan-h4 {
+     color: white;
+     font-weight: 700;
+ }
+ 
+ /* Styles für Bands */ 
+ 
+ 
+ .custom-video {
+    display: flex;
+    justify-content: center; 
+    position: relative;
+     width: 100%;
+     display: block;
+ }
+
+video {
+    max-width: 100%;
+}
+
+ .bandssection {
+     display: flex;
+     flex-wrap: wrap;
+     color: #F8EB22;
+     text-shadow: 2px 2px 2px rgb(0,0,0,.2);
+     font-family: "Rethink Sans", serif;
+     font-size: 72px;
+     font-weight: 700;
+ }
+ 
+ .bands-overlay {
+     position: absolute;
+     margin: 0 0 0 0;
+     padding-top: 100px ;
+     width: 100%;
+     height: 100%;
+     font-family: "Rethink Sans", serif;
+     font-size: 4rem;
+     font-weight: 700; 
+     color: #F8EB22; 
+ }
+     
+ .bands-overlay2 {
+     position: absolute;
+     margin: 0 0 0 0;
+     padding-top: 240px ;
+     width: 100%;
+     height: 100%;
+     font-family: "Rethink Sans", serif;
+     font-size: 3rem;
+     font-weight: 700;
+     color: #F8EB22;
+ }
+ 
+ .bands-sectionp {
+     background: black;
+     padding-bottom: 0;
+     }
+ 
+ /* Styles für Anfahrt */
+ 
+ .Karte {
+     font-family: "Rethink Sans", serif;
+     font-size: 1rem;
+     font-weight: bold; 
+     color: black;
+ }
+ 
+ 
+ 
+ /* Styles für Div Site-Footer-Top*/
+ 
+ .site-footer {
+     background-color: #F8EB22;  
+ }
+ 
+ .site-footer-top {
+     background-color: #F8EB22;  
+     margin: 0px;
+ 
+ }
+ 
+ .site-footer-title {
+     font-family: "Rethink Sans", serif; 
+     font-size: 30px;
+     color: black;
+ }
+ 
+ .site-footer-link {
+     font-family: "Rethink Sans", serif; 
+     font-size: 18px;
+     color: black;   
+ }
+ 
+ .site-footer-item:hover {
+     font-family: "Rethink Sans", serif; 
+     font-size: 18px;
+     color: white;   
+ }
+ .copyright-text {
+     font-family: "Rethink Sans", serif; 
+     font-size: 18px;
+     color: black; 
+ }
+ 
+ .container-Logos-Footer {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: left;
+     margin-left: 55px;
+ }
+ 
+ .LogoSection-Footer {
+     padding: 0px 0px 0px 0px;  
+     background-color: #F8EB22; 
+     margin-bottom: 50px;
+ }
+ 
+ .footer-top {
+   margin-left: 40px;  
+ }
+ 
+ .logo-top-Footer {
+     font-family: "Rethink Sans", serif;
+     font-size: 1.5rem;
+     color: black; 
+     text-align: left;
+ }
+ 
+ .mt-5 {
+     width: 40%;
+ }
+ 
+ .mt-lg-5 {
+     width: 60%;
+ }
+ 
+ .ax {
+     font-family: "Rethink Sans", serif; 
+     font-size: 40px;
+     color: black;  
+ }
+ 
+ .text-white-d-flex {
+     font-family: "Rethink Sans", serif; 
+     font-size: 18px;
+     color: white;
+ }
+ 
+ .text-white-footer {
+     font-family: "Rethink Sans", serif; 
+     font-size: 30px;
+     color: white;
+ }
+ 
+ .social-icon-link {
+     background: black;
+ }
+ 
+ 
+ /* Media Queries */
+ 
+ @media all and (max-width: 1400px) {
+     
+     .container-hero {
+         margin-top: 60px;
+         margin-bottom: 70px;
+         margin-left: 40px;
+     }
+     
+     .hero-p {
+         font-size: 1.25rem;
+     }
+ }
+ 
+ @media all and (max-width: 1300px) {
+     
+     .container-hero {
+         margin-top: 60px;
+         margin-bottom: 50px;
+         margin-left: 40px;
+     }
+     
+     .hero-h2 {
+         font-size: 2rem;
+         margin-bottom: 20px;
+     }
+ 
+     .hero-p {  
+         font-size: 1.15rem;
+     }
+ }
+ 
+ @media all and (max-width: 1200px){
+     
+     .container-hero {
+         margin-top: 60px;
+         margin-bottom: 80px;
+         margin-left: 40px;
+     }
+ 
+     .header-grid {
+         grid-template-rows: 180px auto;
+         gap: 10px;
+         width: 100%;
+         }
+ 
+ 
+     .hero-h1 {
+         font-size: 1.5rem;
+         margin-bottom: 5px;
+         padding-left: 1rem;
+         padding-right: 1rem;
+         margin-bottom: 20px;
+         margin-right: 8rem;
+         margin-left: 15px;
+       
+     }
+     
+     .hero-h2 {
+         font-size: 1.75rem;
+         margin-bottom: 20px;
+     }
+ 
+     .hero-p {  
+         font-size: 1.05rem;
+     }
+ 
+     .hideOnMobile{
+         display: none;
+     }
+     .menu-button {
+         display: block;
+     }
+ }
+ 
+ @media all and (max-width: 1094px) {
+     
+     .container-hero {
+         margin-top: 60px;
+         margin-bottom: 20px;
+         margin-left: 40px;
+     }
+ 
+ }
+ @media all and (max-width: 500px) {
+     .sidebar-gef {
+         width: 100%;
+     }
+     .menu-button {
+         display: block;
+         height: 100px;
+     }
+    
+     .container-header-image{
+        max-width: cover;
+        
+        padding-left: 20px;
+        padding-right: 20px;
+     
+ }
+ }
+ 
+ 
+ 
