@@ -1,4 +1,29 @@
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover,
+a:focus {
+    color: white;
+}
+
+img {
+    max-inline-size: 100%;
+    display: block;
+}
+
 html {
     font-family: "Rethink Sans", serif; 
     font-size: 12pt; 
@@ -6,11 +31,87 @@ html {
 
 body {
     background-color: #F8EB22;
-   
-    font-family: "Rethink Sans", serif;  
+    font-family: "Rethink Sans", serif;
+    padding-top: 80px;  
 }
 
-/* Styles für Navbar*/
+/* Navbar*/
+
+header {
+    background-color: #F8EB22;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.header__content {
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 0 20px;
+min-height: 80px;
+}
+
+.logo-link {
+ max-width: 200px;
+}
+
+.nav {
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+}
+
+.nav__list {
+    display: flex;
+    column-gap: 40px;
+    width: 100%
+}
+
+
+
+.nav__link {
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.4s;
+}
+
+.nav__link:hover, .nav__link:active {
+    color: white;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    height: 3px;
+    width: 27px;
+    background-color: black;
+    margin-bottom: 5px;
+    opacity: 0.8;
+    transition: all 0.3s ease-in-out;
+    
+}
+
+.nav--open {
+    transform: translate(0) !important;
+}
+
+.hamburger--open .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger--open .bar:nth-child(2){
+    opacity: 0;
+}
+
+.hamburger--open .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+}
 
 /*
 nav {
@@ -80,23 +181,36 @@ nav svg {
 }
     */
 
-/* Styles für Header */
+/* Festival Titel */
 
 
 .container-header-image {
     width: cover;    
     padding-left: 20px;
     padding-right: 20px;
-     
- }
- 
- #image-header {
-    width: 100%;
- }
     
+     
+ }    
+
+  /* Allgemeine Styles für Sections */ 
+ .section-padding {
+     background: #F8EB22;
+     padding-top: 100px;
+     padding-bottom: 0px;
+ }
+
+ .section-ueberschrift {
+    font-family: "Rethink Sans", serif;
+    font-size: 2.5rem;
+    font-weight: 700; 
+    color: black; 
+    padding-bottom: 40px;
+    text-align: center;
+    text-transform: uppercase; 
+}
  
  
- /* Styles für Hero Section */
+ /* Festival Section */
  
  .align-items-center {
      margin-bottom: 30px;
@@ -197,7 +311,7 @@ nav svg {
  }
  
  
- /* Styles für Logo Section */
+ /* Veranstalterlogos */
  
 
  
@@ -215,6 +329,13 @@ width: 100%;
      flex-wrap: wrap;
      justify-content: center;
  }
+
+.logos-img {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+
  .LogoSection-top {
      background-color: #F8EB22; 
  }
@@ -230,11 +351,11 @@ width: 100%;
      color: black; 
  }
  
- /* Styles für Schirmherr-Section */
+ /* Schirmherr */
  
  .container-Schirmherr {
      display: grid;
-     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
      grid-template-rows: 1fr 2fr;
      width: 100%;
      margin-top: 80px;
@@ -280,25 +401,16 @@ width: 100%;
      grid-column-start: 1;
      grid-column-end: 2;
      
-     height: 100%;
-     object-fit: cover;
+
  }
  
  
  
- /* Styles für Programm und Zeitplan */
- 
- .section-padding {
-     background: #F8EB22;
-     padding-top: 100px;
-     padding-bottom: 0px;
- }
- 
- /* Styles für das Programm */
+ /* Programm Section */
  
  .container-programm {
      display: grid;
-     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+     grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
      grid-template-rows: 1fr 1fr;
      width: 100%;
      margin-inline: auto;
@@ -318,8 +430,20 @@ width: 100%;
      border: solid 0.5px black;
  }
  
+ .item-programm a {
+    
+    font-family: "Rethink Sans", serif;
+    
+    color: black;
+}
+ 
+
  .item-2-programm {
      border: solid 0.5px black;
+ }
+
+ .a-overlay {
+    align-self: end;
  }
  
  .item-overlay {
@@ -350,14 +474,7 @@ width: 100%;
      font-family: "Rethink Sans", serif;
      font-size: 2.5rem;
      font-weight: 600; 
-     color: #F8EB22;
- }
- .mb-4 {
-     font-family: "Rethink Sans", serif;
-     font-size: 2.5rem;
-     font-weight: 700; 
-     color: black; 
-     padding-bottom: 20px;
+     color: gray;
  }
  
  .text-body-secondary {
@@ -385,7 +502,7 @@ width: 100%;
      font-weight: 500;
  }
  
- /* Styles für den Zeitplan */
+ /* Zeitplan Section */
  
  .zeitplan {
      display: flex;  
@@ -400,15 +517,7 @@ width: 100%;
      padding-top: 100px; 
  }
  
- .mb-zeitplan {
-     font-family: "Rethink Sans", serif;
-     font-size: 2.5rem;
-     font-weight: 700; 
-     color: black; 
-     padding-bottom: 40px;
-     text-align: center;
- 
- }
+
  
  .mb-z {
      font-family: "Rethink Sans", serif;
@@ -476,7 +585,7 @@ width: 100%;
      font-weight: 700;
  }
  
- /* Styles für Bands */ 
+ /* Bands Section */ 
  
  
  .custom-video {
@@ -530,13 +639,11 @@ video {
      padding-bottom: 0;
      }
  
- /* Styles für Anfahrt */
+ /* Anfahrt Section */
  
- .Karte {
-     font-family: "Rethink Sans", serif;
-     font-size: 1rem;
-     font-weight: bold; 
-     color: black;
+
+ .anfahrt-img {
+    width: 100%; 
  }
  
  
@@ -634,8 +741,7 @@ video {
  /* Media Queries */
  
  @media all and (max-width: 1400px) {
-     
-     .container-hero {
+    .container-hero {
          margin-top: 60px;
          margin-bottom: 70px;
          margin-left: 40px;
@@ -645,9 +751,33 @@ video {
          font-size: 1.25rem;
      }
  }
- 
+
+
  @media all and (max-width: 1300px) {
-     
+    .nav {
+        position: fixed;
+        top: 80px;
+        left: 0;
+        background-color: #F8EB22;
+        width: 100%;
+        padding: 10px 0 25px;
+        transform: translateX(-100%);
+    }
+
+    .nav__list {
+        flex-direction: column;
+        align-items: center;  
+        row-gap: 20px;  
+    }
+
+    .nav_link {
+        font-size: 14px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
      .container-hero {
          margin-top: 60px;
          margin-bottom: 50px;
@@ -665,8 +795,7 @@ video {
  }
  
  @media all and (max-width: 1200px){
-     
-     .container-hero {
+    .container-hero {
          margin-top: 60px;
          margin-bottom: 80px;
          margin-left: 40px;
@@ -698,7 +827,45 @@ video {
      .hero-p {  
          font-size: 1.05rem;
      }
- 
+
+     .logo-top {
+        font-size: 1.05rem;
+    }
+
+    .section-padding {
+        padding-top: 80px;
+     
+    }
+
+    .section-ueberschrift {
+        font-size: 2.2rem;
+        padding-bottom: 20px;
+    }
+
+    .container-programm {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(539px, 1fr));
+        grid-template-rows: 1fr 1fr;
+        width: 100%;
+        margin-inline: auto;   
+    }
+    
+    .item-overlay {
+        font-size: 1.15rem;
+        margin-bottom: 30px;
+        }
+    
+    .bands-overlay2 {
+        padding-top: 15% ;
+        width: 100%;
+        height: 100%;
+        font-family: "Rethink Sans", serif;
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #F8EB22;
+        text-align: center;
+    }
+    
      .hideOnMobile{
          display: none;
      }
@@ -707,32 +874,269 @@ video {
      }
  }
  
- @media all and (max-width: 1094px) {
-     
-     .container-hero {
+ @media all and (max-width: 1092px) {
+    .container-hero {
          margin-top: 60px;
          margin-bottom: 20px;
          margin-left: 40px;
      }
  
  }
- @media all and (max-width: 500px) {
-     .sidebar-gef {
-         width: 100%;
-     }
-     .menu-button {
-         display: block;
-         height: 100px;
-     }
+
+ @media all and (max-width: 1078px) {
+    .container-programm {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+        grid-template-rows: 1fr 1fr;
+        width: 100%;
+        margin-inline: auto;   
+    }
+ }
+
+ @media all and (max-width: 718px) {
+    .section-ueberschrift {
+        font-size: 1.8rem;
+        padding-bottom: 20px;
+    }
     
-     .container-header-image{
-        max-width: cover;
-        
-        padding-left: 20px;
-        padding-right: 20px;
-     
+    .container-programm {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(291px, 1fr));
+        grid-template-rows: 1fr 1fr;
+        width: 100%;
+        margin-inline: auto;   
+    }
+
+    .item-overlay {
+        font-size: 1.15rem;
+        margin-bottom: 30px;
+    }
+
+    .bands-overlay2 {
+        padding-top: 15%;
+        font-size: 2    rem;
+        color: #F8EB22;
+        text-align: center;
+    }
+
+    .anfahrt-img {
+        height: 25vh;
+        object-fit: cover;
+    }
  }
+
+  @media all and (max-width: 416px) {
+    .item-overlay {
+    font-size: 1.15rem;
+    margin-bottom: 30px;
+    }
+
+    .bands-overlay2 {
+        padding-top: 15%;
+        font-size: 1.7rem;
+        color: #F8EB22;
+        text-align: center;
+    }
+ }
+
+ @media all and (max-width: 540px) {
+    .hamburger {
+       display: block;
+       margin-right: 4%;
+   }
+ }
+
+ @media all and (max-width: 535px) {
+    .hamburger {
+       display: block;
+       margin-right: 5%;
+   }
+ }
+
+ @media all and (max-width: 530px) {
+    .hamburger {
+       display: block;
+       margin-right: 6%;
+   }
+ }
+
+ @media all and (max-width: 525px) {
+    .hamburger {
+       display: block;
+       margin-right: 5%;
+   }
+ }
+
+ @media all and (max-width: 520px) {
+    .hamburger {
+       display: block;
+       margin-right: 7%;
+   }
+ }
+
+ @media all and (max-width: 515px) {
+    .hamburger {
+       display: block;
+       margin-right: 9%;
+   }
+ }
+
+ @media all and (max-width: 510px) {
+    .hamburger {
+       display: block;
+       margin-right: 6%;
+   }
+ }
+
+ @media all and (max-width: 505px) {
+    .hamburger {
+       display: block;
+       margin-right: 9%;
+   }
+ }
+
+ @media all and (max-width: 500px) {
+    .hamburger {
+       display: block;
+       margin-right: 10%;
+   }
+ }
+
+
+ @media all and (max-width: 495px) {
+    .hamburger {
+       display: block;
+       margin-right: 11%;
+   }
+ }
+
+ @media all and (max-width: 490px) {
+    .hamburger {
+       display: block;
+       margin-right: 12%;
+   }
+ }
+
+
+ @media all and (max-width: 480px) {
+    .hamburger {
+       display: block;
+       margin-right: 14%;
+   }
+ }
+
+ @media all and (max-width: 470px) {
+    .hamburger {
+       display: block;
+       margin-right: 16%;
+   }
+ }
+
+ @media all and (max-width: 460px) {
+    .hamburger {
+       display: block;
+       margin-right: 18%;
+   }
+ }
+
+
+ @media all and (max-width: 450px) {
+    .hamburger {
+       display: block;
+       margin-right: 20%;
+   }
+ }
+
+
+ @media all and (max-width: 440px) {
+    .hamburger {
+       display: block;
+       margin-right: 22%;
+   }
+ }
+
+ @media all and (max-width: 430px) {
+    .hamburger {
+       display: block;
+       margin-right: 23%;
+   }
+ }
+
+ @media all and (max-width: 420px) {
+    .hamburger {
+       display: block;
+       margin-right: 24%;
+   }
+ }
+
+ @media all and (max-width: 415px) {
+    .hamburger {
+       display: block;
+       margin-right: 26%;
+   }
+ }
+
+ @media all and (max-width: 410px) {
+    .hamburger {
+       display: block;
+       margin-right: 27%;
+   }
+ }
+
+ @media all and (max-width: 400px) {
+    .hamburger {
+       display: block;
+       margin-right: 29%;
+   }
+ }
+
+
+ @media all and (max-width: 398px) {
+    .hamburger {
+        display: block;
+        margin-right: 31%;
+    }
  }
  
- 
- 
+ @media all and (max-width: 386px) {
+    .hamburger {
+       display: block;
+       margin-right: 32%;
+   }
+}
+
+@media all and (max-width: 380px) {
+    .hamburger {
+        display: block;
+        margin-right: 33%;
+    }
+}
+
+@media all and (max-width: 375px) {
+    .hamburger {
+        display: block;
+        margin-right: 34%;
+    }
+}
+
+@media all and (max-width: 370px) {
+    .hamburger {
+        display: block;
+        margin-right: 35%;
+    }
+}
+
+@media all and (max-width: 365px) {
+    .hamburger {
+        display: block;
+        margin-right: 36%;
+    }
+}
+
+@media all and (max-width: 360px) {
+    .hamburger {
+        display: block;
+        margin-right: 37%;
+    }
+}
+
