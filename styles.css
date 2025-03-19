@@ -59,13 +59,11 @@ min-height: 80px;
 
 .nav {
     transition: all 0.3s ease-in-out;
-    width: 100%;
 }
 
 .nav__list {
     display: flex;
     column-gap: 40px;
-    width: 100%
 }
 
 
