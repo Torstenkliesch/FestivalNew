@@ -27,6 +27,7 @@ img {
 html {
     font-family: "Rethink Sans", serif; 
     font-size: 12pt; 
+    scroll-behavior: smooth;
 }
 
 body {
@@ -357,7 +358,7 @@ width: 100%;
  }
  
  .item-programm {
-     border: solid 0.5px black;
+     border: solid 0.5px #F8EB22;
  }
  
  .item-programm a {
@@ -368,7 +369,7 @@ width: 100%;
 }
 
  .item-2-programm {
-     border: solid 0.5px black;
+     border: solid 0.5px #F8EB22;
  }
 
  .a-overlay {
