@@ -22,39 +22,11 @@
 
 <body>
   
-
-
-<!--
-    <input type="checkbox" id="sidebar-active">
-    <label for="sidebar-active" class="open-sidebar-button">
-      <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#1f1f1f"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
-      </label>
-
-      <div class="links-container">
-        <label for="sidebar-active" class="close-sidebar-button">
-        <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#1f1f1f"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
-        </label>
-        <a href="index.html" class="Logo-link"><img src="images/GoodEnergyFestival_Logo.jpg" alt="Logo" height="26px"></a></li>
-        <a href="#section_1">Home</a>
-        <a href="#section_2">Programm</a>
-        <a href="#section_3">Zeitplan</a>
-        <a href="#section_4">Bands</a>
-        <a href="#section_5">Anfahrt</a>
-        <a href="https://facebook.de/good-energy-festival"><img src="images/facebook_icon.svg" width="32px" height="32px" alt="Facebook Item"></a>
-        <a href="https://www.instagramm.de"><img src="images/instagram_icon.svg" width="32px" height="32px" alt="Instagramm Icon"></a>
-      </div>  
-      
-  
-      
-
-  </nav>
--->
-
   <!-- Navbar-->
 
   <header class="header">
     <div class="header__content">
-      <a href="index.html" class="logo-link"><img src="images/GoodEnergyFestival_Logo.jpg" alt="Logo" height="26px"></a>
+      <a href="index.html" class="logo-link"><img src="images/Header_logo.png" alt="Logo" height="26px"></a>
     
       <nav class="nav">
         <ul class="nav__list">
@@ -219,19 +191,26 @@
 
   <!-- Bands Section --> 
 
-  <section class="schedule-section section-padding" id="section_4">
+  <section class="section-padding" id="section_4">
     <h2 class="section-ueberschrift">Line up</h2>
     <div class="bandssection">
       <video autoplay loop muted class="custom-video">
           <source src="videos/Video1.mp4" type="video/mp4">
       </video>
-    <!-- alt: <h2 class="row justify-content-center bands-overlay">
-        Bands
-    </h2> -->
-      <h2 class="row justify-content-center bands-overlay2">
-          Rapper YZ // The Shadels
-      </h2>
+      <a href="#" class="bands-overlay"><h2>Bands</h2></a>
+      <a href="#" class="bands-overlay2"><h2>Rapper YZ // The Shadels</h2></a>
     </div>
+      <div class="bandssection_II">
+        <a href="#" class="bands-overlay"><h2>DJs</h2></a>
+        <a href="#" class="bands-overlay2"><h2>MadMan // Ms House</h2></a>
+        <img src="images/dj-above-1980_new.png" 
+        srcset="
+          images/dj-1280.jpg 350w,  
+          images/dj-above-1980_new.png 1280w," class="DJ-img">
+        >
+      </div>
+    </div>
+     
   </section>
   
       <!-- Anfahrt Section -->
@@ -246,36 +225,71 @@
       </div>
     </section>
   
-  
-      <footer class="site-footer">
-        <div class="site-footer-top">
-            <div class="container footer-top">
-                <div class="row">
-  
-                    <div class="col-lg-6 col-12">
-                        <h2 class="ax">GOOD ENERGY FESTIVAL</h2>
-                    </div>
-  
-                    <div class="col-lg-6 col-12 d-flex justify-content-lg-end align-items-center">
-                        <ul class="social-icon d-flex justify-content-lg-end">
-                            <li class="social-icon-item">
-                                <a href="#" class="social-icon-link">
-                                    <span class="bi-facebook"></span>
-                                </a>
-                            </li>
-  
-                            <li class="social-icon-item">
-                                <a href="#" class="social-icon-link">
-                                    <span class="bi-instagram"></span>
-                                </a>
-                            </li>
-  
-                        
-                        </ul>
-                    </div>
-                </div>
-            </div>
+  <footer>
+    <section class="Footer-Container">
+      
+      <div class="Logo-Footer">
+        <img src="images/Header_logo.png" alt="Logo" class="Footer-Logo-Image">
+        <div class="Footer-SocialMedia">
+          <img src="images/facebook_icon.svg" class="Footer-Facebook" alt="Facebook-Logo-Link">
+          <img src="images/instagram_icon.svg" class="Footer-Instagram" alt="Instagram-Logo-Link">
         </div>
+    
+      </div>
+      <div class="Links-Footer">
+        <h3>LINKS</h3>
+        <ul>
+          <li class="Links-Footer-Links-ul"><a href="#">ÜBER UNS</a></li>
+          <li class="Links-Footer-Links-ul"><a href="#">IMPRESSUM</a></li>
+          <li class="Links-Footer-Links-ul"><a href="#">DATENSCHUTZ</a></li>
+        </ul>
+      </div>
+
+      <div class="Kontakt-Footer">
+        <h3>KONTAKT</h3>
+        
+          <div class="Kontakt-Footer-Row-1">
+  
+              <div class="Links-Footer-Kontakt-Spalte-1">ADRESSE:</div>
+              <div class="Links-Footer-Kontakt-Spalte-2">Palo-Alto-Platz 11, 69124 Heidelberg</div>
+          </div>  
+
+          <div class="Kontakt-Footer-Row-2">
+  
+            <div class="Links-Footer-Kontakt-Spalte-3">TEL.:</div>
+            <div class="Links-Footer-Kontakt-Spalte-4">06221-3262175</div>
+          </div>
+
+          <div class="Kontakt-Footer-Row-3">
+  
+            <div class="Links-Footer-Kontakt-Spalte-5">E-MAIL:</div>
+            <div class="Links-Footer-Kontakt-Spalte-6"><a href="#">info@good-energy-festival.de</a></div>
+          </div>
+
+      <!--
+              <li class="Links-Footer-Kontakt-ul">TEL.:</li>
+              <li class="Links-Footer-Kontakt-ul">E-MAIL:</li>
+            </ul>
+          
+          <div class="Kontakt-Footer-Row-2">
+            <ul>
+              
+              <li class="Links-Footer-Kontakt-ul">06221-3262175</a></li>
+              <li class="Links-Footer-Kontakt-ul"><a href="#">info@good-energy-festival.de</a></li>
+            </ul>
+          </div>
+
+          -->
+        
+      </div>
+    </section>
+
+    <section class="copyright">
+      Copyright &copy; Good Energy Festival 2025
+    </section>
+
+  </footer>
+      
 <!--
         <div class="LogoSection-top">
           <div class="container-Logos-Footer">
@@ -288,104 +302,31 @@
           </div>
         </div>
 -->    
-        <div class="container footer-top">
-            <div class="row">
+       
+
+
+        
   
-                <div class="col-lg-6 col-12 pb-2">
-                    <h5 class="site-footer-title mb-3">Links</h5>
-  
-                    <ul class="site-footer-links">
-                        <li class="site-footer-link-item">
-                            <a href="#" class="site-footer-link">Home</a>
-                        </li>
-  
-                        <li class="site-footer-link-item">
-                            <a href="#" class="site-footer-link">Das Festival</a>
-                        </li>
-  
-                        <li class="site-footer-link-item">
-                            <a href="#" class="site-footer-link">Programm</a>
-                        </li>
-  
-                        <li class="site-footer-link-item">
-                            <a href="#" class="site-footer-link">Zeitplan</a>
-                        </li>
-  
-                        <li class="site-footer-link-item">
-                            <a href="#" class="site-footer-link">Bands</a>
-                        </li>
-  
-                        <li class="site-footer-link-item">
-                            <a href="#" class="site-footer-link">Anfahrt</a>
-                        </li>
-  
-                        <li class="site-footer-link-item">
-                            <a href="#" class="site-footer-link">Über uns</a>
-                        </li>
-                    </ul>
-                </div>
-  
-                <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
-                    <h5 class="site-footer-title mb-3">Kontakt</h5>
-  
-                
-  
-                    <p class="text-white-d-flex">
-                        <a href="mailto:info@good-energy-festival.de" class="site-footer-link">
-                            info@good-energy-festival.de
-                        </a>
-                    </p>
-                </div>
-  
-                
-            </div>
-        </div>
-  
-        <div class="site-footer-bottom">
-            <div class="container footer-top">
-                <div class="row">
-  
-                    <div class="col-lg-3 col-12 mt-5">
-                        <p class="copyright-text">Copyright © 2025 Good Energy Festival</p>
-                    </div>
-  
-                    <div class="col-lg-8 col-12 mt-lg-5">
-                        <ul class="site-footer-links">
-                            <li class="site-footer-link-item">
-                                <a href="#" class="site-footer-link">Impressum</a>
-                            </li>
-  
-                            <li class="site-footer-link-item">
-                                <a href="#" class="site-footer-link">Datenschutz</a>
-                            </li>  
-                                  
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-  
-        <!-- Einbindung von Bootstrap Script -->
+        <!-- JavaScript -->
   
         
-        <script>
+      <script>
 
-const navEl = document.querySelector(".nav");
-const hamburgerEl = document.querySelector(".hamburger");
-const navlinkEl = document.querySelector(".nav__link");
+        const navEl = document.querySelector(".nav");
+        const hamburgerEl = document.querySelector(".hamburger");
+        const navlinkEl = document.querySelector(".nav__link");
 
-hamburgerEl.addEventListener("click", () => {
-    navEl.classList.toggle("nav--open");
-    hamburgerEl.classList.toggle("hamburger--open");
-});
+        hamburgerEl.addEventListener("click", () => {
+            navEl.classList.toggle("nav--open");
+            hamburgerEl.classList.toggle("hamburger--open");
+        });
 
-navEl.addEventListener("click", () => {
-    navEl.classList.remove("nav--open");
-    hamburgerEl.classList.toggle("hamburger--open");
-})
+        navEl.addEventListener("click", () => {
+            navEl.classList.remove("nav--open");
+            hamburgerEl.classList.toggle("hamburger--open");
+        })
 
-        </script>
+      </script>
 
     </main>
   </body>
