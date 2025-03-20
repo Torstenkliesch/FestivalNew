@@ -1037,7 +1037,7 @@ video {
 @media all and (max-width: 765px) {
     /* Neu hinzugefügt 20.3.*/
     .container-hero {
-        margin-top: 60px;
+        margin-top: 40px;
         margin-bottom: 40px;
         margin-left: 20px;
     }
@@ -1138,7 +1138,7 @@ video {
 @media all and (max-width: 630px) {
     /* Neu hinzugefügt 20.3.*/
     .container-hero {
-        margin-top: 60px;
+        margin-top: 35px;
         margin-bottom: 40px;
         margin-left: 20px;
     }
@@ -1173,7 +1173,7 @@ video {
     }
 
     .hero-h1 {
-        font-size: 1.15rem;
+        font-size: 1.05rem;
         padding-top: 5px;
         padding-bottom: 5px;
         padding-left: 10px;
@@ -1190,7 +1190,7 @@ video {
     }
 
     .hero-p {  
-        font-size: 0.9rem;
+        font-size: 1rem;
         padding-left: 10px;
     }
    /* Ende neu hinzugefügt 20.3.*/
