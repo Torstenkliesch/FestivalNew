@@ -191,18 +191,18 @@ min-height: 80px;
  
  }
  
- .grid-image {
+ .grid-item-image {
      grid-row-start: 1; 
-     grid-row-end: 4; 
+     grid-row-end: 3; 
      grid-column-start: 2;
      grid-column-end: 2;
-     
+     overflow: hidden;
  
  }
  
  .grid-item-2 {
-     grid-row-start: 3; 
-     grid-row-end: 4; 
+     grid-row-start: 2; 
+     grid-row-end: 3; 
      grid-column-start: 1;
      grid-column-end: 1;
  
@@ -217,6 +217,8 @@ min-height: 80px;
      margin-bottom: 5px;
      padding-left: 1rem;
      padding-right: 1rem;
+     padding-bottom: 5px;
+     padding-top: 5px;
      margin-bottom: 20px;
      margin-right: 8rem;
      margin-left: 15px;
@@ -231,17 +233,27 @@ min-height: 80px;
      padding-left: 1rem;
      padding-right: 1rem;
      margin-bottom: 20px;
+     padding-bottom: 5px;
  }
  
  .hero-p {
      font-family:"Rethink Sans", serif;
-     font-size: 1.5rem;
+     font-size: 1.65rem;
      color: black; 
      padding-left: 1rem;
      padding-right: 1rem;
+     padding-top: 10px;
  }
  
- 
+ .hero-p2 {
+    font-family:"Rethink Sans", serif;
+    font-size: 1.65rem;
+    color: black; 
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 10px;
+}
+
  /* Veranstalterlogos */
  
 
@@ -278,7 +290,7 @@ width: 100%;
  
  .logo-top {
      font-family: "Rethink Sans", serif;
-     font-size: 1.5rem;
+     font-size: 2rem;
      color: black; 
  }
  
@@ -431,89 +443,7 @@ width: 100%;
      font-size: 40px;
      font-weight: 500;
  }
- 
- /* Zeitplan Section */
- 
- .zeitplan {
-     display: flex;  
-     flex-wrap: wrap;
-     width: 100%;
-     background-image: url("https://torstenkliesch.github.io/gef/images/Vegan-Festival");
-     background-size: cover;
-     background-position: center;
-     background-repeat: no-repeat;
-     min-height: 80vh;  
-     padding-bottom: 100px; 
-     padding-top: 100px; 
- }
- 
 
- 
- .mb-z {
-     font-family: "Rethink Sans", serif;
-     font-size: 4rem;
-     font-weight: 700; 
-     color: white; 
-     padding-bottom: 50px;
- }
- 
- .schedule-table .pop-background-image {
-     background-image: url("https://torstenkliesch.github.io/gef/images/Vegan-Festival");
-     opacity: 80%;
- }
- 
- .schedule-table .pop-background-image1 {
-     background-image: url("https://torstenkliesch.github.io/gef/images/walle1");
-     opacity: 80%;
- }
- 
- .schedule-table .pop-background-image2 {
-     background-image: url("https://torstenkliesch.github.io/gef/images/Balkonmodul_bauen");
-     opacity: 80%;
-     height: 250px;
- }
- 
- .schedule-table .pop-background-image3 {
-     background-image: url("gef/images/yoga.jpeg");
-     opacity: 80%;
-     height: 250px;
- }
- 
- .schedule-table .pop-background-image4 {
-     background-image: url("../images/Fahrraddisko1.jpg");
-     opacity: 80%;
-     height: 250px;
- }
- 
- .schedule-table .pop-background-image7 {
-     background-image: url('../images/concert-1854113_1280.jpg');
-     opacity: 80%;
-     height: 250px;
- }
- 
- .schedule-table .pop-background-image6 {
-     background-image: url('https://torstenkliesch.github.io/gef/images/Vortrag');
-     opacity: 80%;
-     height: 250px;
- }
- 
- .schedule-table thead th {
-     background-color: #212529;
-     border-right: 1px solid #363a3e;
-     color: white;
-     font-family: "Rethink Sans", serif;
-     font-size: 20px;
- }
- 
- .schedule-table th, .schedule-table tr, .schedule-table td {
-     font-family: "Rethink Sans", serif;
-     font-size: 20px;
- }
- 
- .zeitplan-h4 {
-     color: white;
-     font-weight: 700;
- }
  
  /* Bands Section */ 
  
@@ -602,7 +532,14 @@ video {
     width: 100%; 
  }
  
- 
+.Adresse {
+    display: flex;
+    justify-content: center;
+    font-family: "Rethink Sans", serif;
+     font-size: 2.5rem;
+     font-weight: 400;
+     padding-top: 10px;
+}
  
  /* Footer */
 
@@ -777,15 +714,58 @@ video {
  @media all and (max-width: 1980px) {
     .container-hero {
          margin-top: 60px;
-         margin-bottom: 100px;
+         margin-bottom: 40px;
          margin-left: 40px;
      }
      
-     .grid-image {
+     .grid-item-image {
         grid-row-start: 1; 
         grid-row-end: 3; 
         grid-column-start: 2;
         grid-column-end: 2;
+        max-inline-size: 85%;
+        padding-left: 50px;
+
+
+ }
+
+ }
+
+ @media all and (max-width: 1650px) {
+    .container-hero {
+         margin-top: 60px;
+         margin-bottom: 40px;
+         margin-left: 40px;
+     }
+     
+     .grid-item-image {
+        grid-row-start: 1; 
+        grid-row-end: 3; 
+        grid-column-start: 2;
+        grid-column-end: 2;
+        max-inline-size: 95%;
+        padding-left: 50px;
+
+
+ }
+
+ }
+
+
+ @media all and (max-width: 1600px) {
+    .container-hero {
+         margin-top: 60px;
+         margin-bottom: 40px;
+         margin-left: 40px;
+     }
+     
+     .grid-item-image {
+        grid-row-start: 1; 
+        grid-row-end: 3; 
+        grid-column-start: 2;
+        grid-column-end: 2;
+        max-inline-size: 100%;
+        padding-left: 10px;
 
 
  }
@@ -803,6 +783,15 @@ video {
      .hero-p {
          font-size: 1.25rem;
      }
+
+     .hero-p2 {
+        font-size: 1.25rem;
+    }
+
+    .logo-top {
+        font-size: 1.25rem; 
+    }
+
  }
 
 
@@ -812,7 +801,7 @@ video {
         top: 80px;
         left: 0;
         background-color: #F8EB22;
-        width: 100%;
+        max-inline-size: 100%;
         padding: 10px 0 25px;
         transform: translateX(-100%);
     }
@@ -839,11 +828,26 @@ video {
      
      .hero-h2 {
          font-size: 2rem;
-         margin-bottom: 20px;
+         margin-bottom: 10px;
+         padding-bottom: 10px;
      }
  
      .hero-p {  
-         font-size: 1.15rem;
+         font-size: 1.25rem;
+     }
+
+     .hero-p2 {  
+        font-size: 1.25rem;
+    }    
+    
+    .logo-top {
+        font-size: 1.25rem; 
+    }
+
+     .Adresse {
+        font-size: 2rem;
+        padding-left: 20px;
+        padding-right: 20px;
      }
  }
  
@@ -854,12 +858,39 @@ video {
          margin-left: 40px;
      }
  
-     .header-grid {
-         grid-template-rows: 180px auto;
-         gap: 10px;
-         width: 100%;
-         }
+
  
+         .header-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-rows: auto;
+            gap: 20px;
+            width: 100%;
+            }
+    
+        .grid-item {
+            display: flex;
+            grid-row-start: 1; 
+            grid-row-end: 1; 
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+        
+        .grid-item-image {
+            grid-row-start: 2; 
+            grid-row-end: 3; 
+            grid-column-start: 2;
+            grid-column-end: 2;    
+        }
+        
+        .grid-item-2 {
+            grid-row-start: 2; 
+            grid-row-end: 3; 
+            grid-column-start: 1;
+            grid-column-end: 1;
+        }
+
+
  
      .hero-h1 {
          font-size: 1.5rem;
@@ -874,15 +905,20 @@ video {
      
      .hero-h2 {
          font-size: 1.75rem;
-         margin-bottom: 20px;
+
      }
  
      .hero-p {  
-         font-size: 1.05rem;
+         font-size: 1.25rem;
      }
 
+     .hero-p2 {  
+        font-size: 1.25rem;
+    }
+
+
      .logo-top {
-        font-size: 1.05rem;
+        font-size: 1.25rem;
     }
 
     .section-padding {
@@ -925,6 +961,27 @@ video {
      .menu-button {
          display: block;
      }
+
+     .Adresse {
+        font-size: 1.75rem;
+        padding-left: 20px;
+     }     
+ }
+
+
+ @media all and (max-width: 1130px) {
+
+ .hero-p {  
+    font-size: 1.25rem;
+}
+
+.hero-p2 {  
+    font-size: 1.25rem;
+}
+
+.logo-top {
+    font-size: 1.25rem; 
+}
  }
  
  @media all and (max-width: 1092px) {
@@ -933,9 +990,17 @@ video {
          margin-bottom: 20px;
          margin-left: 40px;
      }
- 
+ /*
+     .grid-item-image {
+        grid-row-start: 1; 
+        grid-row-end: 3; 
+        grid-column-start: 2;
+        grid-column-end: 2;    
+    }
+*/
  }
 
+ /*
  @media all and (max-width: 1078px) {
     .container-programm {
         display: grid;
@@ -944,6 +1009,23 @@ video {
         width: 100%;
         margin-inline: auto;   
     }
+ }
+*/
+ @media all and (max-width: 1030px) {
+ .hero-p {  
+    font-size: 1.25rem;
+    padding-left: 10px;
+}
+
+.hero-p2 {  
+    font-size: 1.25rem;
+    padding-left: 10px;
+}
+
+.logo-top {
+    font-size: 1.25rem; 
+}
+
  }
 
  @media all and (max-width: 900px) {
@@ -955,7 +1037,7 @@ video {
     }
 
     .header-grid {
-        grid-template-rows: 160px auto;
+        grid-template-rows: auto;
         gap: 10px;
         width: 100%;
         }
@@ -963,22 +1045,28 @@ video {
 
     .hero-h1 {
         font-size: 1.3rem;
-        margin-bottom: 5px;
         padding-left: 1rem;
         padding-right: 1rem;
-        margin-bottom: 20px;
         margin-right: 8rem;
         margin-left: 15px;
     }
     
     .hero-h2 {
         font-size: 1.2rem;
-        margin-bottom: 20px;
     }
 
     .hero-p {  
-        font-size: 0.9rem;
+        font-size: 1.1rem;
     }
+
+    .hero-p2 {  
+        font-size: 1.1rem;
+    }
+
+    .logo-top {
+        font-size: 1.1rem; 
+    }
+
    /* Ende neu hinzugefügt 20.3.*/
    
     .Footer-Container {
@@ -995,6 +1083,11 @@ video {
        margin-bottom: 30px;
     }
 
+    .Adresse {
+        font-size: 1.2rem;
+        padding-left: 20px;
+     }
+
 }
 
 @media all and (max-width: 830px) {
@@ -1006,7 +1099,7 @@ video {
     }
 
     .header-grid {
-        grid-template-rows: 140px auto;
+        grid-template-rows: auto;
         gap: 10px;
         width: 100%;
         }
@@ -1017,19 +1110,31 @@ video {
         margin-bottom: 5px;
         padding-left: 1rem;
         padding-right: 1rem;
-        margin-bottom: 20px;
         margin-right: 8rem;
         margin-left: 15px;
     }
     
     .hero-h2 {
-        font-size: 1.2rem;
-        margin-bottom: 20px;
+        font-size: 1.3rem;
     }
 
     .hero-p {  
-        font-size: 0.9rem;
+        font-size: 1.05rem;
     }
+
+    .hero-p2 {  
+        font-size: 1.05rem;
+    }
+
+    .logo-top {
+        font-size: 1.05rem; 
+    }
+  
+    .Adresse{
+        font-size: 1rem;
+        padding-left: 20px;
+     }
+
    /* Ende neu hinzugefügt 20.3.*/
 }
 
@@ -1045,7 +1150,7 @@ video {
     .header-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        grid-template-rows: auto auto;
+        grid-template-rows: auto;
         gap: 20px;
         width: 100%;
         }
@@ -1058,16 +1163,16 @@ video {
         grid-column-end: 3;
     }
     
-    .grid-image {
+    .grid-item-image {
         grid-row-start: 2; 
-        grid-row-end: 4; 
+        grid-row-end: 3; 
         grid-column-start: 2;
-        grid-column-end: 4;    
+        grid-column-end: 2;    
     }
     
     .grid-item-2 {
         grid-row-start: 2; 
-        grid-row-end: 4; 
+        grid-row-end: 3; 
         grid-column-start: 1;
         grid-column-end: 1;
     }
@@ -1085,14 +1190,25 @@ video {
     
     .hero-h2 {
         font-size: 1.2rem;
-        margin-bottom: 20px;
+        margin-bottom: 0px;
         padding-left: 10px;
+        padding-top: 0px;
     }
 
     .hero-p {  
-        font-size: 0.9rem;
+        font-size: 1rem;
         padding-left: 10px;
     }
+
+    .hero-p2 {  
+        font-size: 1rem;
+        padding-left: 10px;
+    }
+
+    .logo-top {
+        font-size: 1.05rem; 
+    }
+
    /* Ende neu hinzugefügt 20.3.*/
 }
 
@@ -1151,9 +1267,9 @@ video {
         width: 100%;
         }
 
-    .grid-item {
-        grid-row-start: 1; 
-        grid-row-end: 1; 
+    .grid-item-image {
+        grid-row-start: 2; 
+        grid-row-end: 2; 
         grid-column-start: 1;
         grid-column-end: 1;
     }
@@ -1185,7 +1301,7 @@ video {
     
     .hero-h2 {
         font-size: 1.2rem;
-        margin-bottom: 20px;
+        margin-bottom: 0px;
         padding-left: 10px;
     }
 
@@ -1193,6 +1309,16 @@ video {
         font-size: 1rem;
         padding-left: 10px;
     }
+
+    .hero-p2 {  
+        font-size: 1rem;
+        padding-left: 10px;
+    }
+
+    .logo-top {
+        font-size: 1.rem; 
+    }
+
    /* Ende neu hinzugefügt 20.3.*/
 }
 
